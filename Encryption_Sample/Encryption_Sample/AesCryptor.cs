@@ -15,6 +15,17 @@ namespace Encryption_Sample
         private readonly Aes Aes;
 
         /// <summary>
+        /// Dispose the Aes
+        /// when the class
+        /// is destroyed
+        /// </summary>
+        ~ AesCryptor()
+        {
+            if (this.Aes != null)
+                this.Aes.Dispose();
+        }
+
+        /// <summary>
         /// This is the constructor for the AES
         /// cryptor. EncryptionKey and SaltKey
         /// are expected and must be at least

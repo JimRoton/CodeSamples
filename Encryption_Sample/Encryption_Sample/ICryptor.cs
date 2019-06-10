@@ -1,4 +1,6 @@
-﻿namespace Encryption_Sample
+﻿using System;
+
+namespace Encryption_Sample
 {
     public interface ICryptor
     {
